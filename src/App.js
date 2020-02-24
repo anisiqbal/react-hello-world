@@ -5,14 +5,15 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter'
+import Setstate from './components/Setstate';
 
 function App() {
   return (
     <div className="App">
 
-    <Counter/>
+      <Setstate/>
 
-
+    {/* <Counter/> */}
       {/* <Message/> */}
        {/* <Greet name="Bruce" heroName="Batman" />
        <Greet name="Clark" heroName="Superman"/>
