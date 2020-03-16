@@ -6,16 +6,22 @@ constructor(props) {
     super(props)
 
     this.state = {
-        count: 0,
-        name: ''
+        count: 0    
+        
     }
 }
 
     increment() {
-        const updatedCount = this.state.count + 1;
-        this.setState({count: updatedCount});
+        this.setState({
+                count: this.state.count + 1
+        }, 
+        () => { 
+            console.log('Callback value', this.state.count )
+        }
 
-        console.log(updatedCount);
+        );
+
+        console.log(this.state.count);
     }
 
     render() {
